@@ -3,27 +3,41 @@ import Link from "next/link"
 const header = () => {
     return (
         <>
+            <div className="w-full h-full">
+                <nav className="bg-white p-1 w-full fixed top-0 z-20">
+                    <div className="flex justify-center items-center">
+                        <div className="flex-none font-bold text-4xl">
+                            <h1>Bloosom Blue</h1>
+                            <h1 className="pl-[70px]">Salon</h1>
+                        </div>
+                    </div>
+                    <div className="flex justify-center items-center text-black">
+                        <div className="border-b-2 border-transparent  hover:text-cyan-400 rounded hover:border-blue-500 mx-1.5 font-semibold p-1">
+                            <Link href={"/"}>Home</Link>
+                        </div>
+                        <div className="flex">
+                            <div className="border-b-2 border-transparent  hover:text-cyan-400 rounded hover:border-blue-500 mx-1.5 font-semibold p-1">
+                                <Link href={"/Gallery"}>Photo Gallery</Link>
+                            </div>
+                        </div>
+                        <div className="flex ">
+                            <div className="border-b-2 border-transparent  hover:text-cyan-400 rounded hover:border-blue-500 mx-1.5 font-semibold p-1">
+                                <Link href={"/Services"}>Services</Link>
+                            </div>
+                        </div>
+                        <div className="flex">
+                            <div className="border-b-2 border-transparent  hover:text-cyan-400 rounded hover:border-blue-500 mx-1.5 font-semibold p-1">
+                                <a href="https://www.vagaro.com/blueblossomhairsaloninc" target="_blank">Book now</a>
+                            </div>
+                        </div>
+                        <div className="flex">
+                            <div className="border-b-2 border-transparent  hover:text-cyan-400 rounded hover:border-blue-500 mx-1.5 font-semibold p-1">
+                                <a href="#footer">Contact us</a>
+                            </div>
+                        </div>
 
-            <nav className=" bg-[#0369a1] p-5 w-full flex justify-start">
-                <div className="text-black flex items-end pl-4">
-                    <Link href={"/"}>Home</Link>
-                </div>
-                <div className="text-black flex items-end pl-20">
-                    <Link href={"/Gallery"}>Photo Gallery</Link>
-                </div>
-                <div className="text-black flex items-start pl-[1300px]">
-                    <p>Make an appoiment</p>
-                </div>
-                <div className="text-black flex items-start pl-10">
-                    <a href="https://www.facebook.com/brandon.araya.100" target="_blank">Facebook</a>
-                </div>
-                <div className="text-black flex items-start pl-10">
-                    <a href="https://www.instagram.com/bran_araya10" target="_blank">Instagram</a>
-                </div>
-
-            </nav>
-            <div className=" bg-[#0369a1] p-1/4 mt-2 w-full flex">
-                <p className="text-[#0369a1] flex items-center justify-normal">xd</p>
+                    </div>
+                </nav>
             </div>
         </>
     )

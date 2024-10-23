@@ -1,11 +1,13 @@
+import Photos from "../components/photos";
+
 const gallery = () => {
     return (
         <>
-            <div className="h-screen flex justify-center items-center">
-                <p>Photo Gallery</p>
+            <div className="py-32 ">
+                <Photos />
             </div>
         </>
-    )
+    );
 }
 
 export default gallery
