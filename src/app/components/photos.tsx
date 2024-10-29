@@ -11,8 +11,6 @@ const photos = () => {
                     <CardBody className="overflow-visible p-2">
                         <Image
                             isZoomed
-                            shadow="sm"
-                            radius="lg"
                             width="100%"
                             height={400}
                             alt='prueba'

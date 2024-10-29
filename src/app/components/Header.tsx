@@ -1,10 +1,39 @@
+'use client'
 import Link from "next/link"
+import { useState, useEffect } from 'react';
+
 
 const header = () => {
+    const [isNavbarVisible, setIsNavbarVisible] = useState(true);
+    const [lastScrollY, setLastScrollY] = useState(0);
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollY = window.scrollY;
+
+            // Detectar si el usuario está haciendo scroll hacia abajo o hacia arriba
+            if (currentScrollY > lastScrollY) {
+                // Scroll hacia abajo - ocultar navbar
+                setIsNavbarVisible(false);
+            } else {
+                // Scroll hacia arriba - mostrar navbar
+                setIsNavbarVisible(true);
+            }
+
+            // Actualizar la posición anterior del scroll
+            setLastScrollY(currentScrollY);
+        };
+
+        // Añadir el evento de scroll
+        window.addEventListener('scroll', handleScroll);
+
+        // Limpiar el evento al desmontar el componente
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, [lastScrollY]);
+
     return (
         <>
             <div className="w-full h-full">
-                <nav className="bg-white p-1 w-full fixed top-0 z-20">
+                <nav className={`bg-white p-1 w-full fixed top-0 z-20 transition-transform duration-300 ${isNavbarVisible ? 'transform translate-y-0' : 'transform -translate-y-20'}`}>
                     <div className="flex justify-center items-center">
                         <div className="flex-none font-bold text-4xl">
                             <h1>Bloosom Blue</h1>
