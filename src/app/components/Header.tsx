@@ -6,28 +6,35 @@ import { useState, useEffect } from 'react';
 const header = () => {
     const [isNavbarVisible, setIsNavbarVisible] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
+
     useEffect(() => {
         const handleScroll = () => {
             const currentScrollY = window.scrollY;
 
-            // Detectar si el usuario está haciendo scroll hacia abajo o hacia arriba
-            if (currentScrollY > lastScrollY) {
-                // Scroll hacia abajo - ocultar navbar
-                setIsNavbarVisible(false);
-            } else {
-                // Scroll hacia arriba - mostrar navbar
-                setIsNavbarVisible(true);
-            }
+            // Detectar desplazamiento solo si ha superado el umbral (por ejemplo, 50px)
+            if (Math.abs(currentScrollY - lastScrollY) > 100) {
+                if (currentScrollY > lastScrollY) {
+                    // Scroll hacia abajo - ocultar navbar
+                    setIsNavbarVisible(false);
+                } else {
+                    // Scroll hacia arriba - mostrar navbar
+                    setIsNavbarVisible(true);
+                }
 
-            // Actualizar la posición anterior del scroll
-            setLastScrollY(currentScrollY);
+                // Actualizar la última posición de scroll solo si se supera el umbral
+                setLastScrollY(currentScrollY);
+            }
         };
 
-        // Añadir el evento de scroll
-        window.addEventListener('scroll', handleScroll);
+        // Usar requestAnimationFrame para mejorar el rendimiento
+        const optimizedHandleScroll = () => {
+            window.requestAnimationFrame(handleScroll);
+        };
+
+        window.addEventListener('scroll', optimizedHandleScroll);
 
         // Limpiar el evento al desmontar el componente
-        return () => window.removeEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', optimizedHandleScroll);
     }, [lastScrollY]);
 
     return (
