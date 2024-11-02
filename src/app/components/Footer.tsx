@@ -8,16 +8,16 @@ const footer = () => {
                     <div>
                         <h3 className="text-xl font-bold mb-4">Opening Hours</h3>
                         <ul>
-                            <li>Monday to Friday: 9:00 AM - 6:00 PM</li>
-                            <li>Saturday: 10:00 AM - 4:00 PM</li>
-                            <li>Sunday: Closed</li>
+                            <li>Tuesday to Friday: 10:00 AM - 5:00 PM</li>
+                            <li>Saturday: 9:00 AM - 5:00 PM</li>
+                            <li>Sunday & Monday: Closed</li>
                         </ul>
                     </div>
                     <div>
                         <h3 className="text-xl font-bold mb-4">Contact Information</h3>
                         <ul>
-                            <li>Address: 123 Example Street, City</li>
-                            <li>Phone: <a href="tel:+1234567890" className="hover:underline">+123 456 7890</a></li>
+                            <li>Address: 3032 Santa Barbara Blvd, Cape Coral, FL 33914</li>
+                            <li>Phone: <a href="tel:+1(239)471-7871" className="hover:underline">+1(239)471-7871</a></li>
                             <li>Email: <a href="mailto:email@example.com" className="hover:underline">email@example.com</a></li>
                         </ul>
                     </div>
@@ -27,7 +27,7 @@ const footer = () => {
                             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-gray-400">
                                 <FaFacebook />
                             </a>
-                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-gray-400">
+                            <a href="https://www.instagram.com/blue_blossom_hair_salon/?hl=es" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-gray-400">
                                 <FaInstagram />
                             </a>
                         </div>

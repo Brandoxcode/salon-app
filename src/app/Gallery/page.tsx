@@ -3,7 +3,7 @@ import Photos from "../components/photos";
 const gallery = () => {
     return (
         <>
-            <div className="py-32 flex justify-center items-center">
+            <div className="flex justify-center items-center bg-slate-100">
                 <Photos />
             </div>
         </>

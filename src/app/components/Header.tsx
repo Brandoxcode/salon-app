@@ -1,77 +1,105 @@
 'use client'
 import Link from "next/link"
 import { useState, useEffect } from 'react';
+import Image from "next/image";
 
 
 const header = () => {
     const [isNavbarVisible, setIsNavbarVisible] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
+
+    const closeMenu = () => {
+        setIsOpen(false);
+    };
 
     useEffect(() => {
         const handleScroll = () => {
             const currentScrollY = window.scrollY;
 
-            // Detectar desplazamiento solo si ha superado el umbral (por ejemplo, 50px)
+
             if (Math.abs(currentScrollY - lastScrollY) > 100) {
                 if (currentScrollY > lastScrollY) {
-                    // Scroll hacia abajo - ocultar navbar
                     setIsNavbarVisible(false);
                 } else {
-                    // Scroll hacia arriba - mostrar navbar
                     setIsNavbarVisible(true);
                 }
-
-                // Actualizar la última posición de scroll solo si se supera el umbral
                 setLastScrollY(currentScrollY);
             }
         };
 
-        // Usar requestAnimationFrame para mejorar el rendimiento
+
         const optimizedHandleScroll = () => {
             window.requestAnimationFrame(handleScroll);
         };
 
         window.addEventListener('scroll', optimizedHandleScroll);
 
-        // Limpiar el evento al desmontar el componente
         return () => window.removeEventListener('scroll', optimizedHandleScroll);
     }, [lastScrollY]);
 
     return (
         <>
             <div className="w-full h-full">
-                <nav className={`bg-white p-1 w-full fixed top-0 z-20 transition-transform duration-300 ${isNavbarVisible ? 'transform translate-y-0' : 'transform -translate-y-20'}`}>
+                <nav className={`bg-white border-b-1 border-gray-300 p-1 w-full fixed top-0 z-20 transition-transform duration-300 ${isNavbarVisible ? 'transform translate-y-0' : 'transform -translate-y-24'}`}>
                     <div className="flex justify-center items-center">
-                        <div className="flex-none font-bold text-4xl">
-                            <h1>Bloosom Blue</h1>
-                            <h1 className="pl-[70px]">Salon</h1>
+                        <div className="flex-none font-bold text-4xl pb-1">
+                            <Image
+                                width={110}
+                                height={30}
+                                alt="logo"
+                                src='/images/newLogo.png'
+                            />
                         </div>
                     </div>
-                    <div className="flex justify-center items-center text-black">
-                        <div className="border-b-2 border-transparent  hover:text-cyan-400 rounded hover:border-blue-500 mx-1.5 font-semibold p-1">
-                            <Link href={"/"}>Home</Link>
-                        </div>
-                        <div className="flex">
-                            <div className="border-b-2 border-transparent  hover:text-cyan-400 rounded hover:border-blue-500 mx-1.5 font-semibold p-1">
-                                <Link href={"/Gallery"}>Photo Gallery</Link>
+                    <div className="md:hidden flex items-center justify-end">
+                        <button
+                            className="inline-flex items-center justify-start p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-inset"
+                            onClick={toggleMenu}
+                        >
+                            <svg
+                                className="w-6 h-6"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth={2}
+                                    d="M4 6h16M4 12h16M4 18h16"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+                    <div
+                        className={`${isOpen ? 'block' : 'hidden'
+                            } w-full md:flex md:justify-center md:w-auto md:items-center md:space-x-4`}
+                    >
+                        <div className="md:inline-block  text-black">
+                            <div className="border-b-2 border-transparent md:inline-block hover:text-cyan-400 rounded hover:border-blue-500 mx-1.5 font-semibold p-1">
+                                <Link href={"/"} onClick={closeMenu}>Home</Link>
+                            </div>
+                            <div className="border-b-2 border-transparent md:inline-block hover:text-cyan-400 rounded hover:border-blue-500 mx-1.5 font-semibold p-1">
+                                <Link href={"/Gallery"} onClick={closeMenu} >Photo Gallery</Link>
+                            </div>
+                            <div className="border-b-2 border-transparent md:inline-block hover:text-cyan-400 rounded hover:border-blue-500 mx-1.5 font-semibold p-1">
+                                <Link href={"/Services"} onClick={closeMenu}>Services</Link>
+                            </div>
+                            <div className="border-b-2 border-transparent md:inline-block hover:text-cyan-400 rounded hover:border-blue-500 mx-1.5 font-semibold p-1">
+                                <Link href={"/Team"} onClick={closeMenu}>Team</Link>
+                            </div>
+                            <div className="border-b-2 border-transparent md:inline-block hover:text-cyan-400 rounded hover:border-blue-500 mx-1.5 font-semibold p-1">
+                                <a href="https://www.vagaro.com/blueblossomhairsaloninc" target="_blank" onClick={closeMenu}>Book now</a>
+                            </div>
+                            <div className="border-b-2 border-transparent md:inline-block hover:text-cyan-400 rounded hover:border-blue-500 mx-1.5 font-semibold p-1">
+                                <a href="#footer" onClick={closeMenu}>Contact us</a>
                             </div>
                         </div>
-                        <div className="flex ">
-                            <div className="border-b-2 border-transparent  hover:text-cyan-400 rounded hover:border-blue-500 mx-1.5 font-semibold p-1">
-                                <Link href={"/Services"}>Services</Link>
-                            </div>
-                        </div>
-                        <div className="flex">
-                            <div className="border-b-2 border-transparent  hover:text-cyan-400 rounded hover:border-blue-500 mx-1.5 font-semibold p-1">
-                                <a href="https://www.vagaro.com/blueblossomhairsaloninc" target="_blank">Book now</a>
-                            </div>
-                        </div>
-                        <div className="flex">
-                            <div className="border-b-2 border-transparent  hover:text-cyan-400 rounded hover:border-blue-500 mx-1.5 font-semibold p-1">
-                                <a href="#footer">Contact us</a>
-                            </div>
-                        </div>
-
                     </div>
                 </nav>
             </div>
