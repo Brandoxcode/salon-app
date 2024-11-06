@@ -4,7 +4,7 @@ export default function servicesComponent() {
     const { services, treatments, cc, makeups, waxs } = data
     return (
         <div>
-            <ul className="flex flex-col items-center justify-center ">
+            <ul className="flex flex-col items-center justify-center text-white">
                 <div className="space-y-3 px-5">
                     <span className="text-4xl font-bold pb-3">Haircuts & Styles</span>
                     {services.map((service, index) => (

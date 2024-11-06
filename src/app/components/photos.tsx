@@ -25,7 +25,7 @@ const photos = () => {
                                     width={500}
                                     height={900}
                                     alt='prueba'
-                                    className="block h-full object-cover"
+                                    className="block h-full object-cover rounded-md"
                                     src={item.img}
                                 />
                             </div>

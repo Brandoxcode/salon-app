@@ -9,7 +9,7 @@ const team = () => {
                 <h1 className="tracking-widest font-medium text-3xl bg-opacity-50">Our awsome team!</h1>
             </div>
             <div className="flex flex-wrap">
-                <div className="max-w-sm rounded overflow-hidden shadow-lg mx-6">
+                <div className="max-w-sm rounded overflow-hidden shadow-lg mx-6 mb-2">
                     <Image
                         className="w-full"
                         width={70}
@@ -27,7 +27,7 @@ const team = () => {
                         <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-lg font-semibold text-gray-700 mr-2 mb-2">Estilista</span>
                     </div>
                 </div>
-                <div className="max-w-sm rounded overflow-hidden shadow-lg mx-6">
+                <div className="max-w-sm rounded overflow-hidden shadow-lg mx-6 mb-2">
                     <Image
                         className="w-full"
                         width={70}
@@ -45,7 +45,7 @@ const team = () => {
                         <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-lg font-semibold text-gray-700 mr-2 mb-2">Jefe</span>
                     </div>
                 </div>
-                <div className="max-w-sm rounded overflow-hidden shadow-lg mx-6">
+                <div className="max-w-sm rounded overflow-hidden shadow-lg mx-6 mb-2">
                     <Image
                         className="w-full"
                         width={70}
