@@ -78,26 +78,26 @@ const header = () => {
                     </div>
                     <div
                         className={`${isOpen ? 'block' : 'hidden'
-                            } w-full md:flex md:justify-center md:w-auto md:items-center md:space-x-4`}
+                            } w-full md:flex md:justify-center md:w-auto md:items-center`}
                     >
                         <div className="md:inline-block  text-black">
-                            <div className="border-b-2 border-transparent md:inline-block hover:text-cyan-400 rounded hover:border-blue-500 mx-1.5 font-semibold p-1">
-                                <Link href={"/"} onClick={closeMenu}>Home</Link>
+                            <div className=" md:inline-block hover:text-cyan-400 rounded  mx-1.5 font-semibold p-1">
+                                <Link href={"/"} onClick={closeMenu} className="border-b-2 border-transparent hover:border-blue-500">Home</Link>
                             </div>
-                            <div className="border-b-2 border-transparent md:inline-block hover:text-cyan-400 rounded hover:border-blue-500 mx-1.5 font-semibold p-1">
-                                <Link href={"/Gallery"} onClick={closeMenu} >Photo Gallery</Link>
+                            <div className="md:inline-block hover:text-cyan-400 rounded mx-1.5 font-semibold p-1">
+                                <Link href={"/Gallery"} onClick={closeMenu} className="border-b-2 border-transparent hover:border-blue-500">Photo Gallery</Link>
                             </div>
-                            <div className="border-b-2 border-transparent md:inline-block hover:text-cyan-400 rounded hover:border-blue-500 mx-1.5 font-semibold p-1">
-                                <Link href={"/Services"} onClick={closeMenu}>Services</Link>
+                            <div className=" md:inline-block hover:text-cyan-400 rounded  mx-1.5 font-semibold p-1">
+                                <Link href={"/Services"} onClick={closeMenu} className="border-b-2 border-transparent hover:border-blue-500">Services</Link>
                             </div>
-                            <div className="border-b-2 border-transparent md:inline-block hover:text-cyan-400 rounded hover:border-blue-500 mx-1.5 font-semibold p-1">
-                                <Link href={"/Team"} onClick={closeMenu}>Team</Link>
+                            <div className=" md:inline-block hover:text-cyan-400 rounded  mx-1.5 font-semibold p-1">
+                                <Link href={"/Team"} onClick={closeMenu} className="border-b-2 border-transparent hover:border-blue-500">Team</Link>
                             </div>
-                            <div className="border-b-2 border-transparent md:inline-block hover:text-cyan-400 rounded hover:border-blue-500 mx-1.5 font-semibold p-1">
-                                <a href="https://www.vagaro.com/blueblossomhairsaloninc" target="_blank" onClick={closeMenu}>Book now</a>
+                            <div className=" md:inline-block hover:text-cyan-400 rounded  mx-1.5 font-semibold p-1">
+                                <a href="https://www.vagaro.com/blueblossomhairsaloninc" target="_blank" onClick={closeMenu} className="border-b-2 border-transparent hover:border-blue-500">Book now</a>
                             </div>
-                            <div className="border-b-2 border-transparent md:inline-block hover:text-cyan-400 rounded hover:border-blue-500 mx-1.5 font-semibold p-1">
-                                <a href="#footer" onClick={closeMenu}>Contact us</a>
+                            <div className=" md:inline-block hover:text-cyan-400 rounded  mx-1.5 font-semibold p-1">
+                                <a href="#footer" onClick={closeMenu} className="border-b-2 border-transparent hover:border-blue-500">Contact us</a>
                             </div>
                         </div>
                     </div>

@@ -1,10 +1,11 @@
-const team = () => {
+import Team from "../components/team"
+const teamPage = () => {
 
     return (
-        <div className="h-screen flex justify-center items-center">
-            <h1 className="tracking-widest font-medium p-[300px] px-0 text-3xl  w-20 bg-opacity-50">c</h1>
+        <div className="flex justify-center items-center sm:flex-col">
+            <div className="py-40"><Team /></div>
         </div>
     )
 }
 
-export default team
+export default teamPage
