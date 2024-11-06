@@ -5,3 +5,14 @@
 html {
     scroll-behavior: smooth;
 }
+
+@media not all and (min-resolution: 0.001dpcm) {
+    @supports (-webkit-appearance: none) {
+
+        /* Estilos específicos para Safari */
+        .safari-fix {
+            margin-bottom: -5px;
+            /* Ajusta según sea necesario */
+        }
+    }
+}
