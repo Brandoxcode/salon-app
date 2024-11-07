@@ -16,6 +16,7 @@ const photos = () => {
                         clickable: true,
                     }}
                     navigation={true}
+                    loop={true}
                     modules={[Autoplay, Pagination, Navigation]}
                     className="h-96 w-full rounded-md"
                 >
