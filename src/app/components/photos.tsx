@@ -9,7 +9,7 @@ const photos = () => {
     return (
         <>
             <section className="py-40 md:py-60 lg:max-xl:py-96">
-                <div className="flex justify-center items-center pb-4">
+                <div className="flex justify-center items-center pb-4 pt-20 md:pt-0">
                     <h1 className="tracking-widest font-medium text-3xl">Check out our photos</h1>
                 </div>
                 <div className="container">
