@@ -2,7 +2,7 @@
 import Image from "next/image";
 import list from "../../../utils/galleryList";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation } from "swiper/modules";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import 'swiper/css/bundle'
 
 const photos = () => {
@@ -12,13 +12,12 @@ const photos = () => {
                 <Swiper
                     slidesPerView={3}
                     spaceBetween={30}
-                    autoplay={{
-                        delay: 2500,
-                        disableOnInteraction: false,
+                    pagination={{
+                        clickable: true,
                     }}
                     navigation={true}
-                    modules={[Autoplay, Navigation]}
-                    className="h-full w-full rounded-md"
+                    modules={[Autoplay, Pagination, Navigation]}
+                    className="h-96 w-full rounded-md"
                 >
                     {list.map((item, index) => (
                         <SwiperSlide key={index}>
