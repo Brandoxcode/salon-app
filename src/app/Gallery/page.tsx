@@ -1,11 +1,10 @@
-
-import Gallery from "../components/gallery";
+import Photos from "../components/photos";
 
 const gallery = () => {
     return (
         <>
             <div className="flex justify-center items-center bg-slate-100">
-                <Gallery />
+                <Photos />
             </div>
         </>
     );
