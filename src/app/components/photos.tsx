@@ -7,7 +7,7 @@ import 'swiper/css/bundle'
 
 const photos = () => {
     return (
-        <section className="py-96">
+        <section className="py-40 lg:py-72">
             <div className="container">
                 <Swiper
                     slidesPerView={3}
@@ -17,7 +17,7 @@ const photos = () => {
                     }}
                     navigation={true}
                     loop={true}
-                    modules={[Autoplay, Pagination, Navigation]}
+                    modules={[Autoplay, Navigation]}
                     className="h-96 w-full rounded-md"
                 >
                     {list.map((item, index) => (
