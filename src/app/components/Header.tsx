@@ -48,12 +48,14 @@ const header = () => {
                 <nav className={`bg-white border-b-1 border-gray-300 p-1 w-full fixed top-0 z-20 transition-transform duration-300 ${isNavbarVisible ? 'transform translate-y-0' : 'transform -translate-y-24'}`}>
                     <div className="flex justify-center items-center">
                         <div className="flex-none font-bold text-4xl pb-1">
-                            <Image
-                                width={110}
-                                height={30}
-                                alt="logo"
-                                src='/images/newLogo.png'
-                            />
+                            <Link href={'/'}>
+                                <Image
+                                    width={110}
+                                    height={30}
+                                    alt="logo"
+                                    src='/images/newLogo.png'
+                                />
+                            </Link>
                         </div>
                     </div>
                     <div className="md:hidden flex items-center justify-end">
