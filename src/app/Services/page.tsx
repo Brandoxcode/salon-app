@@ -3,7 +3,7 @@ import Background from "../components/background"
 const services = () => {
     return (
         <>
-            <div >
+            <div className="">
                 <Background />
             </div>
         </>
