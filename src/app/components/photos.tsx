@@ -2,7 +2,7 @@
 import Image from "next/image";
 import list from "../../../utils/galleryList";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, EffectFade, Pagination, Navigation } from "swiper/modules";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
@@ -18,7 +18,6 @@ const photos = () => {
                         spaceBetween={30}
                         loop={true}
                         centeredSlides={true}
-
                         autoplay={{
                             delay: 2500,
                             disableOnInteraction: false,
@@ -26,7 +25,7 @@ const photos = () => {
                         pagination={{
                             clickable: true,
                         }}
-                        modules={[Autoplay, Navigation, Pagination, EffectFade]}
+                        modules={[Autoplay, Navigation, Pagination]}
                         className="h-auto w-full rounded-md"
                     >
                         {list.map((item) => (
