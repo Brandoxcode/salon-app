@@ -3,7 +3,7 @@ import Photos from "../components/photos";
 const gallery = () => {
     return (
         <>
-            <div className="flex justify-center items-center bg-slate-100">
+            <div className="bg-slate-50">
                 <Photos />
             </div>
         </>

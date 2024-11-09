@@ -2,33 +2,41 @@
 import Image from "next/image";
 import list from "../../../utils/galleryList";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
-import 'swiper/css/bundle'
+import { Autoplay, EffectFade, Pagination, Navigation } from "swiper/modules";
+import 'swiper/css';
+import 'swiper/css/effect-fade';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 const photos = () => {
     return (
         <>
-            <section className="py-40 md:py-60 lg:max-xl:py-96">
-                <div className="flex justify-center items-center pb-4 pt-20 md:pt-0">
-                    <h1 className="tracking-widest font-medium text-3xl">Check out our photos</h1>
-                </div>
+            <section className="pt-40 pb-10 md:py-60 lg:max-xl:py-96 flex justify-center items-center h-full w-full">
                 <div className="container">
                     <Swiper
-                        slidesPerView={3}
-                        spaceBetween={5}
                         navigation={true}
+                        spaceBetween={30}
                         loop={true}
-                        modules={[Navigation]}
-                        className="h-96 w-full rounded-md"
+                        centeredSlides={true}
+
+                        autoplay={{
+                            delay: 2500,
+                            disableOnInteraction: false,
+                        }}
+                        pagination={{
+                            clickable: true,
+                        }}
+                        modules={[Autoplay, Navigation, Pagination, EffectFade]}
+                        className="h-auto w-full rounded-md"
                     >
-                        {list.map((item, index) => (
-                            <SwiperSlide key={index}>
-                                <div className="flex items-center justify-center">
+                        {list.map((item) => (
+                            <SwiperSlide key={item.id}>
+                                <div className="flex items-center justify-center w-full">
                                     <Image
                                         width={500}
-                                        height={300}
+                                        height={500}
                                         alt='prueba'
-                                        className="block h-full object-cover rounded-md"
+                                        className="rounded-md"
                                         src={item.img}
                                     />
                                 </div>
