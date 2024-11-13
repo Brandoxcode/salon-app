@@ -7,7 +7,7 @@ export default function servicesComponent() {
         <div>
             <ul className="flex flex-wrap items-center justify-center text-black">
                 <div className="space-y-3 px-3">
-                    <span className="text-4xl text-white font-bold pb-3">Haircuts & Styles</span>
+                    <span className="text-4xl text-black font-bold pb-3">Haircuts & Styles</span>
 
                     {services.map((service) => (
                         <li
