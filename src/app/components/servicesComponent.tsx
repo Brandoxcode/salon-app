@@ -5,7 +5,7 @@ export default function servicesComponent() {
 
     return (
         <div>
-            <ul className="flex flex-wrap items-center justify-center text-white">
+            <ul className="flex flex-wrap items-center justify-center text-black">
                 <div className="space-y-3 px-3">
                     <span className="text-4xl text-white font-bold pb-3">Haircuts & Styles</span>
 
@@ -20,7 +20,7 @@ export default function servicesComponent() {
                     ))}
                 </div>
                 <div className="space-y-3 px-3 pt-3">
-                    <span className="text-4xl text-white font-bold pb-3">Hair Color & Extension</span>
+                    <span className="text-4xl text-black font-bold pb-3">Hair Color & Extension</span>
                     {cc.map((color) => (
                         <li
                             key={color.id}
@@ -32,7 +32,7 @@ export default function servicesComponent() {
                     ))}
                 </div>
                 <div className="space-y-3 px-3 pt-3">
-                    <span className="text-4xl text-white font-bold pb-3 pt-40">Waxing</span>
+                    <span className="text-4xl text-black font-bold pb-3 pt-40">Waxing</span>
                     {waxs.map((wax) => (
                         <li
                             key={wax.id}
@@ -44,7 +44,7 @@ export default function servicesComponent() {
                     ))}
                 </div>
                 <div className="space-y-3 pt-3">
-                    <span className="text-4xl text-white font-bold pb-3">Keratin Treatment</span>
+                    <span className="text-4xl text-black font-bold pb-3">Keratin Treatment</span>
                     {treatments.map((treatment) => (
                         <li
                             key={treatment.id}
@@ -57,7 +57,7 @@ export default function servicesComponent() {
                 </div>
 
                 <div className="space-y-3 px-3 pt-3">
-                    <span className="text-4xl text-white font-bold pb-3 pt-40">Make Up</span>
+                    <span className="text-4xl text-black font-bold pb-3 pt-40">Make Up</span>
                     {makeups.map((makeup) => (
                         <li
                             key={makeup.id}
