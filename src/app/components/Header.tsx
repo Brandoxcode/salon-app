@@ -87,7 +87,7 @@ const header = () => {
                                 <Link href={"/"} onClick={closeMenu} className="border-b-2 border-transparent hover:border-blue-500">Home</Link>
                             </div>
                             <div className="md:inline-block hover:text-cyan-400 rounded mx-1.5 font-semibold p-1">
-                                <Link href={"/Gallery"} onClick={closeMenu} className="border-b-2 border-transparent hover:border-blue-500">Photo Gallery</Link>
+                                <Link href={"/Gallery"} onClick={closeMenu} className="border-b-2 border-transparent hover:border-blue-500">Gallery</Link>
                             </div>
                             <div className=" md:inline-block hover:text-cyan-400 rounded  mx-1.5 font-semibold p-1">
                                 <Link href={"/Services"} onClick={closeMenu} className="border-b-2 border-transparent hover:border-blue-500">Services</Link>
