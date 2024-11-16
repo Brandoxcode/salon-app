@@ -10,6 +10,7 @@ export default function Accordion({ items }: any) {
 
     return (
         <div>
+
             {visibleItems.map((item: any, index: number) => (
                 <div key={index} className="border-b border-gray-300 py-3">
                     <span className="text-white font-semibold">{item.name}</span>

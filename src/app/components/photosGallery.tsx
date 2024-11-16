@@ -3,7 +3,7 @@ import list from "../../../utils/galleryList";
 
 const PhotoGallery = () => {
     return (
-        <div className="container mx-auto p-4">
+        <div className="container mx-auto p-4 pt-40">
             <h1 className="text-2xl font-bold mb-4 flex justify-center items-center">Photo Gallery</h1>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
                 {list.map((image,) => (
