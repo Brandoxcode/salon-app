@@ -3,6 +3,7 @@ import { data } from "../../../utils/data";
 import Accordion from "./accordion";
 import { useState } from "react";
 
+
 export default function ServicesComponent() {
     const sections = [
         { title: "Haircuts & Styles", items: data.services },
@@ -13,7 +14,7 @@ export default function ServicesComponent() {
 
     const [openIndex, setOpenIndex] = useState(null);
 
-    const toggleAccordion = (index) => {
+    const toggleAccordion = (index: any) => {
         setOpenIndex(openIndex === index ? null : index);
     };
 

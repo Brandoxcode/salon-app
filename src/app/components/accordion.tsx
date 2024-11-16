@@ -1,7 +1,8 @@
 'use client'
 import { useState } from "react";
 
-export default function Accordion({ items }) {
+
+export default function Accordion({ items }: any) {
     const [isExpanded, setIsExpanded] = useState(false);
 
 
@@ -9,7 +10,7 @@ export default function Accordion({ items }) {
 
     return (
         <div>
-            {visibleItems.map((item, index) => (
+            {visibleItems.map((item: any, index: number) => (
                 <div key={index} className="border-b border-gray-300 py-3">
                     <span className="text-white font-semibold">{item.name}</span>
                     <span className="text-white font-semibold px-3">{item.price}</span>
