@@ -6,7 +6,6 @@ const gallery = () => {
     return (
         <>
             <div className="bg-slate-50">
-
                 <PhotoGallery />
             </div>
         </>
