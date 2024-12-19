@@ -44,6 +44,9 @@ const list = [
     }, {
         id: 13,
         img: "/images/13.jpeg"
+    }, {
+        id: 14,
+        img: "/images/14.jpeg"
     },
 ];
 
