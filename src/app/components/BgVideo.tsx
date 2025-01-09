@@ -13,9 +13,6 @@ const bgVideo = () => {
                         loop
                         playsInline
                         controls={false} />
-                    <div className="relative z-10 flex items-center justify-center h-full bg-black bg-opacity-50">
-                        <Welcome />
-                    </div>
                 </div>
             </main>
         </>
