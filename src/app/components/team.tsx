@@ -20,7 +20,7 @@ const team = () => {
                     <div className="px-6 py-4">
                         <div className="font-bold text-xl mb-2">Luz</div>
                         <p className="text-gray-700 text-base">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                            I’m Luz Marina Quintero, a master hair colorist with over 20 years of experience in the beauty industry. I started my career in 2000 after graduating from the Academia de Belleza Juanito in Tuluá, Colombia. I specialize in balayage, color correction, and haircuts, with a passion for enhancing my clients’ natural beauty. I hold a cosmetology license and stay updated on the latest trends to deliver exceptional results. After moving to the U.S. nine years ago, I’ve continued building my reputation as a skilled stylist. For the past two years, I’ve proudly owned my own salon, where I provide personalized services tailored to every client’s needs.
                         </p>
                     </div>
                     <div className="pt-4 pb-2 flex justify-center items-center">
@@ -61,7 +61,7 @@ const team = () => {
                     <div className="px-6 py-4">
                         <div className="font-bold text-xl mb-2">Lizbeth</div>
                         <p className="text-gray-700 text-base">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                            Hair Stylist
                         </p>
                     </div>
                     <div className="pt-4 pb-2 flex justify-center items-center">
