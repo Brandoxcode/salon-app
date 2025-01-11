@@ -22,7 +22,7 @@ const header = () => {
             const currentScrollY = window.scrollY;
 
 
-            if (Math.abs(currentScrollY - lastScrollY) > 100) {
+            if (Math.abs(currentScrollY - lastScrollY) > 50) {
                 if (currentScrollY > lastScrollY) {
                     setIsNavbarVisible(false);
                 } else {
