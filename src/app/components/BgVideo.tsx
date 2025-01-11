@@ -6,7 +6,7 @@ const bgVideo = () => {
             <main>
                 <div className="w-full h-screen overflow-hidden">
                     <video
-                        className="absolute top-0 left-0 w-full h-full object-cover -z-[1] safari-fix"
+                        className="absolute top-0 left-0 w-full h-full object-cover -z-[1]"
                         src='/videos/bg.mp4'
                         autoPlay
                         muted

@@ -1,4 +1,3 @@
-import Photos from "../components/photos";
 import PhotoGallery from "../components/photosGallery";
 
 
