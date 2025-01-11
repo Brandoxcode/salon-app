@@ -19,7 +19,7 @@ export default function ServicesComponent() {
     };
 
     return (
-        <div className="bg-slate-50 px-3 pt-4 ">
+        <div className="bg-slate-100 px-3 pt-4 ">
             <ul className="space-y-4">
                 {sections.map((section, index) => (
                     <li key={index} className="space-y-2">
