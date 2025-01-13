@@ -61,7 +61,7 @@ const team = () => {
                     <div className="px-6 py-4">
                         <div className="font-bold text-xl mb-2">Lizbeth</div>
                         <p className="text-gray-700 text-base">
-                            Hair Stylist
+                            My name is Lizbeth Polanco. I’ve been a hairstylist for a few months. I graduated from Fort Myers Technical College at the beginning of 2024, and since then, I’ve been doing blowouts, hair washing, and continuing to learn and grow in my craft. The reason I wanted to become a hairstylist is that, as a kid, I always had a passion for hair and loved the idea of creating fun colors for clients. A little more about me: I enjoy going to the gym to clear my mind and reset, playing games with friends, and swimming. When I have the time, I also do lashes.
                         </p>
                     </div>
                     <div className="pt-4 pb-2 flex justify-center items-center">
