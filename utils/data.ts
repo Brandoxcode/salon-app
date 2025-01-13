@@ -38,8 +38,8 @@ export const data = {
         { id: 37, name: 'Makeup - Analysis and Instruction', price: '$45', isOpen: false },
         { id: 38, name: 'Waxing - Brow Shaping', price: '$18', isOpen: false },
         { id: 39, name: 'Waxing - Full Face', price: '$40', isOpen: false },
-        { id: 40, name: 'Waxing-Lips', price: '$10', isOpen: false },
-        { id: 41, name: 'Waxing-Ears', price: '$10', isOpen: false },
+        { id: 40, name: 'Waxing - Lips', price: '$10', isOpen: false },
+        { id: 41, name: 'Waxing - Ears', price: '$10', isOpen: false },
         { id: 42, name: 'Waxing - Lip and Chin', price: '$20', isOpen: false },
         { id: 43, name: 'Waxing - Half Arms', price: '$30', isOpen: false }
     ],
