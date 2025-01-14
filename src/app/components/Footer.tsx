@@ -18,13 +18,13 @@ const footer = () => {
                         <ul>
                             <li>Address: 3032 Santa Barbara Blvd, Cape Coral, FL 33914</li>
                             <li>Phone: <a href="tel:+1(239)471-7871" className="hover:underline">+1(239)471-7871</a></li>
-                            {/* <li>Email: <a href="mailto:email@example.com" className="hover:underline">email@example.com</a></li> */}
+                            <li>Email: <a href="mailto:Contact@blueblossomhairsalon.com" className="hover:underline">Contact@blueblossomhairsalon.com</a></li>
                         </ul>
                     </div>
                     <div>
                         <h3 className="text-xl font-bold mb-4">Follow Us</h3>
                         <div className="flex space-x-4">
-                            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-gray-400">
+                            <a href="https://www.facebook.com/profile.php?id=100083897386534" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-gray-400">
                                 <FaFacebook />
                             </a>
                             <a href="https://www.instagram.com/blue_blossom_hair_salon/?hl=es" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-gray-400">
