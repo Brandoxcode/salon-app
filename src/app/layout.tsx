@@ -17,7 +17,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Blue bloosom",
+  title: "Blue bloosom hair salon",
   description: "Blue Blossom hair salon located in Cape Coral, Florida",
 };
 
