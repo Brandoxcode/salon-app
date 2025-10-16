@@ -1,14 +1,13 @@
 import Image from "next/image"
 
 const team = () => {
-    Image
     return (
         <>
-
+    
             <div className="mb-12 flex justify-center items-center">
                 <h1 className="tracking-widest font-medium text-3xl bg-opacity-50">Our awsome team!</h1>
             </div>
-            <div className="flex flex-wrap">
+            <div className="flex flex-wrap justify-center">
                 <div className="max-w-sm rounded overflow-hidden shadow-lg mx-6 mb-2">
                     <Image
                         className="w-full object-contain"
@@ -66,6 +65,24 @@ const team = () => {
                     </div>
                     <div className="pt-4 pb-2 flex justify-center items-center">
                         <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-lg font-semibold text-gray-700 mr-2 mb-2">Assistant</span>
+                    </div>
+                </div>
+                <div className="max-w-sm rounded overflow-hidden shadow-lg mx-6 mb-2">
+                    <Image
+                        className="w-full"
+                        width={1000}
+                        height={1000}
+                        src="/images/bobbi.jpeg"
+                        alt="Sunset in the mountains"
+                    />
+                    <div className="px-6 py-4">
+                        <div className="font-bold text-xl mb-2">Bobbi Wilson</div>
+                        <p className="text-gray-700 text-base">
+                        My name is Bobbi, and I am a native Floridian with a passion for hair that has shaped my career. With 20 years of experience and a professional license, I specialize in covering gray hair and precision cutting. My dedication to the craft ensures that each client leaves feeling confident and satisfied. I continuously strive to enhance my skills to stay updated with the latest trends in hair design. My goal is to provide a personalized experience that highlights each individual’s unique beauty.
+                        </p>
+                    </div>
+                    <div className="pt-4 pb-2 flex justify-center items-center">
+                        <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-lg font-semibold text-gray-700 mr-2 mb-2">Stylist</span>
                     </div>
                 </div>
             </div>
