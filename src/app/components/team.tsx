@@ -64,7 +64,7 @@ const team = () => {
                         </p>
                     </div>
                     <div className="pt-4 pb-2 flex justify-center items-center">
-                        <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-lg font-semibold text-gray-700 mr-2 mb-2">Assistant</span>
+                        <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-lg font-semibold text-gray-700 mr-2 mb-2">Junior Stylist</span>
                     </div>
                 </div>
                 <div className="max-w-sm rounded overflow-hidden shadow-lg mx-6 mb-2">
