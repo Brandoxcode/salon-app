@@ -1,3 +1,37 @@
+export type TeamMember = {
+    name: string
+    role: string
+    image: string
+    bio: string
+}
+
+export const team: TeamMember[] = [
+    {
+        name: 'Luz',
+        role: 'Owner',
+        image: '/images/luz.jpeg',
+        bio: 'A master hair colorist with over 20 years of experience in the beauty industry. I started my career in 2000 after graduating from the Academia de Belleza Juanito in Tuluá, Colombia. I specialize in balayage, color correction, and haircuts, with a passion for enhancing my clients’ natural beauty. I hold a cosmetology license and stay updated on the latest trends to deliver exceptional results. After moving to the U.S. nine years ago, I’ve continued building my reputation as a skilled stylist. For the past two years, I’ve proudly owned my own salon, where I provide personalized services tailored to every client’s needs.',
+    },
+    {
+        name: 'Kimberly',
+        role: 'Stylist',
+        image: '/images/kim.jpeg',
+        bio: 'After moving to Florida in 2019 I was versed in the world of fashion and beauty. I decided to attend Florida academy and pursue my passion for it. It’s vital to me to stay educated on today’s trend in order to give each client their desired look. I truly believe in educating my clients on products and maintenance for their hair care needs in order for them to maintain the achieved look from the chair to their home. Outside of work quality time with my family and friends is one of my favorite ways to spend my free time. I also love shopping, beaching, and traveling! Most of all i’m more than excited to get to know you in my chair!',
+    },
+    {
+        name: 'Lizbeth',
+        role: 'Junior Stylist',
+        image: '/images/asis.jpeg',
+        bio: 'My name is Lizbeth Polanco. I’ve been a hairstylist for a few months. I graduated from Fort Myers Technical College at the beginning of 2024, and since then, I’ve been doing blowouts, hair washing, and continuing to learn and grow in my craft. The reason I wanted to become a hairstylist is that, as a kid, I always had a passion for hair and loved the idea of creating fun colors for clients.',
+    },
+    {
+        name: 'Gabby',
+        role: 'Stylist',
+        image: '/images/gabby.jpeg',
+        bio: 'Hi, I’m Gabrielle! I’m a beginner stylist and proud graduate of the Aveda Institute in Fort Myers, excited to continue growing behind the chair and building my career in the beauty industry. I’m passionate about all things blonde, dimensional, and bold — from bright blondes to lived-in color transformations that help my clients feel confident and beautiful.',
+    },
+]
+
 export const data = {
     services: [
         { id: 1, name: 'Bangs', price: '$10', isOpen: false },

@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import GoogleTagManager from "./components/GoogleTagManager";
 import { Analytics } from "@vercel/analytics/react"
 
 const geistSans = localFont({
@@ -31,6 +32,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <GoogleTagManager />
         <div>
           <Header />
         </div>
