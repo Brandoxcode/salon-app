@@ -17,6 +17,15 @@ const header = () => {
         setIsOpen(false);
     };
 
+    const handleBookNowClick = () => {
+        closeMenu();
+        const gtag = (window as Window & { gtag?: (...args: unknown[]) => void }).gtag;
+        const adsId = process.env.NEXT_PUBLIC_GA_ADS_ID;
+        if (gtag && adsId) {
+            gtag('event', 'conversion', { send_to: `${adsId}/IUYMCLDbzfUcEOXHpLxB` });
+        }
+    };
+
     useEffect(() => {
         const handleScroll = () => {
             const currentScrollY = window.scrollY;
@@ -96,7 +105,7 @@ const header = () => {
                                 <Link href={"/Team"} onClick={closeMenu} className="border-b-2 border-transparent hover:border-blue-500">Team</Link>
                             </div>
                             <div className=" md:inline-block hover:text-cyan-400 rounded  mx-1.5 font-semibold p-1">
-                                <a href="https://www.vagaro.com/blueblossomhairsaloninc" target="_blank" onClick={closeMenu} className="border-b-2 border-transparent hover:border-blue-500">Book now</a>
+                                <a href="https://www.vagaro.com/blueblossomhairsaloninc" target="_blank" rel="noopener noreferrer" onClick={handleBookNowClick} className="border-b-2 border-transparent hover:border-blue-500">Book now</a>
                             </div>
                             <div className=" md:inline-block hover:text-cyan-400 rounded  mx-1.5 font-semibold p-1">
                                 <a href="#footer" onClick={closeMenu} className="border-b-2 border-transparent hover:border-blue-500">Contact us</a>
